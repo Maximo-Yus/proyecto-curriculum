@@ -1,38 +1,238 @@
-.App {
+body {
+  background: #081742;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.contenedor-principal {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  overflow: hidden; 
+}
+
+
+.header {
+  background: linear-gradient(to right, #1E3A8A, #3b82f6);
+  color: white;
+  padding: 50px;
+  display: flex;          
+  align-items: center;   
+  gap: 40px;
+}
+
+.foto-perfil {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+.header h1 {
+  font-size: 48px;
+  margin: 0 0 10px 0;
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: normal;
+  opacity: 0.9;
+  margin: 0 0 20px 0;
+}
+
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  font-size: 15px;
+}
+
+
+.cuerpo {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+.columna-izquierda {
+  width: 33%;
+}
+
+.columna-derecha {
+  width: 67%;
+}
+
+.titulo-seccion {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 30px 0 20px 0;
+}
+
+.texto {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+.habilidad {
+  margin-bottom: 18px;
+}
+
+.subtitulo-habilidades {
+  font-size: 15px;
+  color: #6b7280;
+  margin: 0 0 10px 0;
+}
+
+.lista-capacidades {
+  list-style: none;      
+  padding: 0;
+  margin: 0 0 25px 0;
+  display: flex;
+  flex-wrap: wrap;       
+  gap: 8px;
+}
+
+.lista-capacidades li {
+  background-color: #f5f3ff;
+  border: 1px solid #e9d5ff;
+  color: #1f2937;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.idioma {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.etiqueta {
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.etiqueta-morada { background-color: #ede9fe; color: #7c3aed; }
+.etiqueta-azul   { background-color: #dbeafe; color: #2563eb; }
+.etiqueta-verde  { background-color: #d1fae5; color: #059669; }
+
+
+.tarjeta {
+  background-color: #f5f3ff;
+  border: 1px solid #e9d5ff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.tarjeta h4 {
+  margin: 0 0 8px 0;
+}
+
+.tarjeta p {
+  margin: 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.tarjeta-proyecto {
+  border: 2px solid #e9d5ff;
+  padding: 20px;
+}
+
+.tarjeta-proyecto h4 {
+  font-size: 18px;
+}
+
+
+.item-experiencia {
+  border-left: 4px solid #1E3A8A;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.fila-titulo {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.item-experiencia h3 {
+  font-size: 20px;
+  color: #1f2937;
+  margin: 5px 0;
+}
+
+.empresa {
+  color: #2f5ad2;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.periodo {
+  background-color: #e5e7eb;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #374151;
+}
+
+
+.item-educacion {
+  border-left-color: #3b82f6;
+}
+
+.item-educacion .empresa {
+  color: #3b82f6;
+}
+
+
+.estadisticas {
+  background: linear-gradient(to right, #9333ea, #3b82f6);
+  color: white;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.titulo-estadisticas {
+  font-size: 22px;
+  margin: 0 0 20px 0;
+}
+
+.fila-estadisticas {
+  display: flex;
+  justify-content: space-around;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.numero {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.etiqueta-estadistica {
+  font-size: 13px;
+  margin: 5px 0 0 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  background-color: #f3f4f6;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: #6b7280;
 }
